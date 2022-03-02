@@ -1,0 +1,74 @@
+$selectorItemsBackgroundColor: grey;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#sketchContainer {
+  display: grid;
+  grid-template-columns: repeat(16, 30px);
+  grid-template-rows: repeat(16, 30px);
+  border-right: 1px solid black;
+}
+
+#mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#sketchSection {
+  display: flex;
+}
+
+#colorBox {
+  width: 50px;
+  height: 25px;
+  background-color: black;
+}
+
+#clearSketch {
+  border: none;
+  width: 30px;
+  font-size: 30px;
+}
+
+.rightSelectors {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: red;
+
+  .chooseColorSection {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .rightSectionButton {
+    background-color: $selectorItemsBackgroundColor;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+.blackBackground {
+  background-color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -9,7 +9,35 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Pixel Sketch</h1>
-    <div id="sketchContainer"></div>
+    <section>
+      <h1>Pixel Sketch</h1>
+      <div id="mainContentContainer">
+        <div id="sketchSection">
+          <div class="rightSelectors">
+            <div class="chooseColorSection">
+              <h3>Choose Color:</h3>
+              <div id="colorBox"></div>
+            </div>
+            <button id="toggleDarken" class="rightSectionButton">
+              Toggle Darken
+            </button>
+            <button id="toggleLighten" class="rightSectionButton">
+              Toggle Lighten
+            </button>
+            <button id="toggleEraser" class="rightSectionButton">
+              Toggle Eraser
+            </button>
+          </div>
+          <div id="sketchContainer"></div>
+          <button id="clearSketch">
+            <div>c</div>
+            <div>l</div>
+            <div>e</div>
+            <div>a</div>
+            <div>r</div>
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
