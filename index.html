@@ -5,37 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <section>
-      <h1>Pixel Sketch</h1>
-      <div id="mainContentContainer">
-        <div id="sketchSection">
-          <div class="rightSelectors">
-            <div class="chooseColorSection">
-              <h3>Choose Color:</h3>
-              <div id="colorBox"></div>
-            </div>
-            <button id="toggleDarken" class="rightSectionButton">
-              Toggle Darken
-            </button>
-            <button id="toggleLighten" class="rightSectionButton">
-              Toggle Lighten
-            </button>
-            <button id="toggleEraser" class="rightSectionButton">
-              Toggle Eraser
-            </button>
-          </div>
-          <div id="sketchContainer"></div>
-          <button id="clearSketch">
-            <div>c</div>
-            <div>l</div>
-            <div>e</div>
-            <div>a</div>
-            <div>r</div>
-          </button>
+      <h1 id="mainHeader">Pixel Sketch</h1>
+      <div class="mainSection">
+        <div id="sketchContainer"></div>
+
+        <button id="clear" class="buttons">Clear</button>
+        <div class="underButtonSection">
+          <button id="toggleEraser" class="buttons">Toggle Eraser</button>
+          <button id="toggleRainbow" class="buttons">Toggle Rainbow</button>
+        </div>
+        <div class="slidecontainer">
+          <input
+            autocomplete="off"
+            type="range"
+            min="1"
+            max="50"
+            value="16"
+            class="slider"
+            id="myRange"
+          />
+          <p id="gridSize">Grid Size: 16 x 16</p>
+        </div>
+
+        <div class="colorPickerSection">
+          <label for="colorPicker">Pick Color: </label>
+          <input
+            autocomplete="off"
+            type="color"
+            name="colorPicker"
+            id="colorPicker"
+            value="black"
+          />
+          <div></div>
         </div>
       </div>
     </section>
